@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const qrActions = [
-  { icon: '/assets/Download.svg', text: 'DOWNLOAD' },
+  { icon: '/assets/download.svg', text: 'DOWNLOAD' },
   { icon: '/assets/Copy.svg', text: 'Copy Link' },
 ];
 

@@ -39,7 +39,7 @@ const LeftCard = () => (
           <Image src="/assets/ZTransferLogo.svg" alt="ZTransfer Logo" width={180} height={20} />
         </div>
         <div className="absolute bottom-2 right-2 mb-2">
-          <Image src="/assets/Options.svg" alt="Options Icon" width={10} height={16} />
+          <Image src="/assets/options.svg" alt="Options Icon" width={10} height={16} />
         </div>
       </div>
     </div>

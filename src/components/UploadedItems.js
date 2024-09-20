@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const svgIcons = [
   { src: '/assets/link-box.svg', alt: 'Copy Link', label: 'COPY LINK' },
-  { src: '/assets/qr-box.svg', alt: 'QR Link', label: 'QR LINK' },
+  { src: '/assets/QR-box.svg', alt: 'QR Link', label: 'QR LINK' },
   { src: '/assets/email-box.svg', alt: 'Email', label: 'EMAIL' },
   { src: '/assets/whatsapp-box.svg', alt: 'WhatsApp', label: 'WHATSAPP' },
   { src: '/assets/msg-box.svg', alt: 'Message', label: 'MESSAGE' },
