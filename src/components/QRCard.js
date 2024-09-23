@@ -5,13 +5,13 @@ const qrActions = [
   { icon: '/assets/Copy.svg', text: 'Copy Link' },
 ];
 
-const QRCard = () => (
+const QRCard = ({ onClose }) => (
   <div className="relative p-6 text-white rounded-lg w-72">
     <Image src="/assets/Rectangle2.svg" alt="Background Shape" width={280} height={280} className="absolute inset-0 z-0" />
     <div className="relative z-10 flex justify-between items-center">
       <Image src="/assets/smallQr.svg" alt="Back Arrow" width={20} height={20} className="cursor-pointer" />
       <p className="text-xs font-normal">GET A QR CODE</p>
-      <Image src="/assets/close.svg" alt="Close Icon" width={20} height={20} className="cursor-pointer" />
+      <Image src="/assets/close.svg" alt="Close Icon" width={20} height={20} className="cursor-pointer" onClick={onClose} />
     </div>
     <div className="relative z-10 flex flex-col items-center mb-2">
       <Image src="/assets/QR.svg" alt="QR Code" width={200} height={150} className="p-4" />
