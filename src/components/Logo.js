@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 const Logo = () => (
-  <div className="absolute p-4">
-    <Image src="/assets/Logo.svg" alt="ZTFR Logo" width={80} height={25} />
+  <div className="absolute top-10 left-10">
+    <Image src="/assets/Logo.svg" alt="ZTFR Logo" width={147} height={50} />
   </div>
 );
 

@@ -11,6 +11,12 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      letterSpacing: {
+        'custom-150': '0.15em',
+      },
+      fontSize: {
+        '10px': '10px', 
+      },
     },
   },
   plugins: [],
