@@ -32,13 +32,13 @@ const RenameCard = ({ onClose }) => {
           <Image
             src="/assets/Rectangle2.svg"
             alt="ZTFR Logo"
-            width={280}
-            height={500}
+            width={314}
+            height={489}
             className="absolute inset-0 z-0"
           />
           <div className="relative z-10 flex justify-between items-center">
             <Image src="/assets/pencil-icon.svg" alt="Pencil Icon" width={18} height={20} className="cursor-pointer" />
-            <p className="text-xs mr-auto ml-5 font-lato">RENAME TITLE</p>
+            <p className="text-xs mr-auto ml-5 font-lato tracking-custom-150">RENAME TITLE</p>
             <Image
               src="/assets/close.svg"
               alt="Close Icon"
@@ -56,20 +56,20 @@ const RenameCard = ({ onClose }) => {
                 onClick={() => handleItemClick(item.action)}
               >
                 <Image src={item.icon} alt={item.text} width={18} height={20} />
-                <p className="ml-2 text-xs font-lato">{item.text}</p>
+                <p className="ml-1 text-xs font-lato tracking-custom-150">{item.text}</p>
               </div>
             ))}
-            <div className="flex justify-between mt-10">
-              <p className="text-xs font-lato">ZTFER7867867861</p>
-              <div className="flex items-center">
-                <p className="text-xs font-lato">MORE OPTIONS</p>
-                <Image src="/assets/options.svg" alt="Options Icon" width={8} height={5} className="ml-2" />
+            <div className="flex justify-between mt-[30px]">
+              <p className="text-10px font-lato tracking-custom-150 mt-3">ZTFER7867867861</p>
+              <div className="flex items-center mb-2">
+                <p className="text-10px font-lato tracking-custom-150 text-gray-400">MORE OPTIONS</p>
+                <Image src="/assets/options.svg" alt="Options Icon" width={6.71} height={25} className="ml-2" />
               </div>
             </div>
           </div>
         </div>
         {showQRCard && (
-          <div className="relative top-8">
+          <div className="relative top-[152px]">
             <QRCard onClose={() => setShowQRCard(false)} />
           </div>
         )}
