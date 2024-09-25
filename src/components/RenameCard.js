@@ -38,7 +38,7 @@ const RenameCard = ({ onClose }) => {
           />
           <div className="relative z-10 flex justify-between items-center">
             <Image src="/assets/pencil-icon.svg" alt="Pencil Icon" width={18} height={20} className="cursor-pointer" />
-            <p className="text-xs mr-auto ml-5 font-lato tracking-custom-150">RENAME TITLE</p>
+            <p className="text-xs mr-auto ml-5 tracking-custom-150 font-lato-regular">RENAME TITLE</p>
             <Image
               src="/assets/close.svg"
               alt="Close Icon"
@@ -56,13 +56,13 @@ const RenameCard = ({ onClose }) => {
                 onClick={() => handleItemClick(item.action)}
               >
                 <Image src={item.icon} alt={item.text} width={18} height={20} />
-                <p className="ml-1 text-xs font-lato tracking-custom-150">{item.text}</p>
+                <p className="ml-1 text-xs tracking-custom-150 font-lato-regular">{item.text}</p>
               </div>
             ))}
             <div className="flex justify-between mt-[30px]">
-              <p className="text-10px font-lato tracking-custom-150 mt-3">ZTFER7867867861</p>
+              <p className="text-10px tracking-custom-150 mt-3 font-lato-regular">ZTFER7867867861</p>
               <div className="flex items-center mb-2">
-                <p className="text-10px font-lato tracking-custom-150 text-gray-400">MORE OPTIONS</p>
+                <p className="text-10px tracking-custom-150 text-gray-400 font-lato-regular">MORE OPTIONS</p>
                 <Image src="/assets/options.svg" alt="Options Icon" width={6.71} height={25} className="ml-2" />
               </div>
             </div>

@@ -17,6 +17,18 @@ module.exports = {
       fontSize: {
         '10px': '10px', 
       },
+      fontFamily: {
+        'lato-black': ['lato-black', 'sans-serif'],
+        'lato-blackItalic': ['lato-blackItalic', 'sans-serif'],
+        'lato-bold': ['lato-bold', 'sans-serif'],
+        'lato-boldItalic': ['lato-boldItalic', 'sans-serif'],
+        'lato-italic': ['lato-italic', 'sans-serif'],
+        'lato-light': ['lato-light', 'sans-serif'],
+        'lato-lightItalic': ['lato-lightItalic', 'sans-serif'],
+        'lato-regular': ['lato-regular', 'sans-serif'],
+        'lato-thin': ['lato-thin', 'sans-serif'],
+        'lato-thinItalic': ['lato-thinItalic', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ const UploadContent = () => (
       width={468.14}
       height={235.08}
     />
-    <div className=" text-black text-xs transform translate-y-[110px] tracking-custom-150">
+    <div className=" text-black text-xs transform translate-y-[110px] tracking-custom-150 font-lato-regular">
       <p>UPLOAD FILES OR FOLDERS BY DROPPING THEM ANYWHERE IN THIS WINDOW</p>
     </div>
   </div>

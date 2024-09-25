@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 import { RenameCard, QRCard, UploadedItems } from '../components';
+import { motion } from 'framer-motion'; 
 
 const LeftCard = () => {
   const [showUploadedItems, setShowUploadedItems] = useState(false);
@@ -41,7 +42,7 @@ const LeftCard = () => {
         </div>
         <div className="absolute p-5 ml-[110px] space-y-2">
           <div className="flex justify-between">
-            <p className="text-sm font-medium w-[149px] h-[17px] tracking-custom-150">FILES UPLOADED</p>
+            <p className="text-sm font-medium w-[149px] h-[17px] tracking-custom-150 font-lato-regular">FILES UPLOADED</p>
             <div className='left-387 top-317' >
               <Image
                 src="/assets/lock.svg"
@@ -53,11 +54,11 @@ const LeftCard = () => {
           </div>
           <div className='flex flex-col space-y-5'>
             <div className="absolute">
-              <p className="text-10px leading-none w-[140px] h-[12px] tracking-custom-150">2.8 GB COMPLETED</p>
+              <p className="text-10px leading-none w-[140px] h-[12px] tracking-custom-150 font-lato-regular">2.8 GB COMPLETED</p>
             </div>
 
             <div className="absolute">
-              <p className="text-10px leading-none w-[102px] h-[12px] tracking-custom-150">ZTFR7867867861</p>
+              <p className="text-10px leading-none w-[102px] h-[12px] tracking-custom-150 font-lato-regular">ZTFR7867867861</p>
             </div>
           </div>
         </div>
@@ -81,9 +82,9 @@ const LeftCard = () => {
           </div>
         </div>
         <div className="mt-5 flex flex-col justify-center text-center items-center">
-          <p className="w-[220px] h-[15px] text-xs tracking-custom-150 ">COPY YOUR DOWNLOAD LINK</p>
+          <p className="w-[220px] h-[15px] text-xs tracking-custom-150 font-lato-regular">COPY YOUR DOWNLOAD LINK</p>
           <div className="flex justify-center items-center mt-3 ">
-            <p className=" w-[240.62px] h-[15px] underline text-xs tracking-custom-150 ml-3">{downloadLink}</p>
+            <p className=" w-[240.62px] h-[15px] underline text-xs tracking-custom-150 ml-3 font-lato-regular">{downloadLink}</p>
             <div onClick={handleCopyLink} className="cursor-pointer">
               {isCopied ? (
                 <FaCheck className="text-green-500" size={16} />
@@ -94,7 +95,7 @@ const LeftCard = () => {
           </div>
         </div>
         <div className='flex items-end justify-end'>
-          <button onClick={handleShowItems} className="w-[140px] h-[12px] mt-4  cursor-pointer text-10px tracking-custom-150">SEE WHAT'S INSIDE</button>
+          <button onClick={handleShowItems} className="w-[140px] h-[12px] mt-4  cursor-pointer text-10px tracking-custom-150 font-lato-regular">SEE WHAT'S INSIDE</button>
         </div>
         <div className="flex justify-between ">
           <div className="flex justify-center w-full mt-6">
@@ -106,15 +107,22 @@ const LeftCard = () => {
           </div>
         </div>
       </div>
-      <div className="absolute text-xs right-[-130px] top-[135px] transform rotate-90 w-[240px] h-[7px] text-black whitespace-nowrap font-lato">
+      <div className="absolute text-xs right-[-130px] top-[135px] transform rotate-90 w-[240px] h-[7px] text-black whitespace-nowrap font-lato-regular">
         ADVANCED ENCRYPTION STANDARD (AES) 256-BIT
       </div>
+
       {showUploadedItems && (
-        <div className="fixed inset-0 z-50 flex justify-end transition-transform duration-500 ease-in-out transform">
+        <motion.div
+          className="fixed inset-0 z-50 flex justify-end "
+          initial={{ x: '100%' }}  
+          animate={{ x: 0 }}  
+          exit={{ x: '100%' }}  
+          transition={{ duration: 0.5 }} 
+        >
           <div className="w-1/2" onClick={(e) => e.stopPropagation()}>
             <UploadedItems onClose={handleShowItems} onShowQRCard={handleShowQRCard} />
           </div>
-        </div>
+        </motion.div>
       )}
 
       {showQRCard && (
